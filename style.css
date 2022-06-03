@@ -1,10 +1,10 @@
 /*------------------------------------------------------------------
-.______    __  ___   ___  __   _______  ___________    ____ 
-|   _  \  |  | \  \ /  / |  | |   ____||   ____\   \  /   / 
-|  |_)  | |  |  \  V  /  |  | |  |__   |  |__   \   \/   /  
-|   ___/  |  |   >   <   |  | |   __|  |   __|   \_    _/   
-|  |      |  |  /  .  \  |  | |  |____ |  |        |  |     
-| _|      |__| /__/ \__\ |__| |_______||__|        |__|     
+.______    __  ___   ___  __   _______  ___________    ____
+|   _  \  |  | \  \ /  / |  | |   ____||   ____\   \  /   /
+|  |_)  | |  |  \  V  /  |  | |  |__   |  |__   \   \/   /
+|   ___/  |  |   >   <   |  | |   __|  |   __|   \_    _/
+|  |      |  |  /  .  \  |  | |  |____ |  |        |  |
+| _|      |__| /__/ \__\ |__| |_______||__|        |__|
 
 
 @charset "utf-8";
@@ -14,7 +14,7 @@
 Project:    Apps Craft
 Version:    0.1
 Last change:    25/10/2017
-Primary use:    Apps Craft Minimal Template  
+Primary use:    Apps Craft Minimal Template
 
 
 ================== Font Famil Used =================
@@ -45,8 +45,8 @@ Section Description:    14px/1 'Poppins', sans-serif;
 6. Apps Craft Video Section
 7. Apps Craft Fun Factory
 8. Apps Craft Why Choose Us
-9. Apps Craft Screenshort Section 
-10. Apps Craft Testimonial 
+9. Apps Craft Screenshort Section
+10. Apps Craft Testimonial
 11. Apps Craft Pricing Table
 12. Apps Craft Team
 13. Apps Craft now Available
@@ -59,8 +59,8 @@ Section Description:    14px/1 'Poppins', sans-serif;
 =============================================================--------------------------------------------------------------*/
 
 
-/*====================================================================== 
-		1. Apps Craft Typography 
+/*======================================================================
+		1. Apps Craft Typography
 ====================================================================================*/
 
 body {
@@ -77,8 +77,8 @@ iframe{
 	border: none;
 }
 a, b, div, ul, li{
-	-webkit-tap-highlight-color: rgba(0,0,0,0); 
-	-webkit-tap-highlight-color: transparent; 
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
 	-moz-outline-: none;
 }
 a,
@@ -126,7 +126,7 @@ ul {
 h1,h2,h3,h4,h5,h6,a,ul,li{
 	line-height: 1;
 }
-.clear-both:before, 
+.clear-both:before,
 .clear-both:after{
 	display: table;
 	content: "";
@@ -249,7 +249,7 @@ h1,h2,h3,h4,h5,h6,a,ul,li{
 }
 
 /*=====================================================================
-		Apps Craft Gradient Version Color 
+		Apps Craft Gradient Version Color
 ======================================================================================*/
 
 .apps-craft-menu ul li a:hover ,
@@ -289,7 +289,7 @@ h1,h2,h3,h4,h5,h6,a,ul,li{
 	background-image: -webkit-linear-gradient(196deg, #fa326f, #f2514c, #f2504d);
 	background-image: linear-gradient(-106deg, #fa326f, #f2514c, #f2504d);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;   
+	-webkit-text-fill-color: transparent;
 }
 .fun-factorey-paralx-bg-1 {
 	background-image: url(img/fun-factory-bg-1.png);
@@ -353,8 +353,8 @@ h1,h2,h3,h4,h5,h6,a,ul,li{
 
 
 
-/*=================================================================== 
-		Apps Craft Solid Color Version 
+/*===================================================================
+		Apps Craft Solid Color Version
 ==================================================================================*/
 
 .apps-craft-solid-color .apps-craft-menu ul li a:hover ,
@@ -453,7 +453,7 @@ h1,h2,h3,h4,h5,h6,a,ul,li{
 	color: #1DA1F2;
 }
 
-/*=================================================================== 
+/*===================================================================
 		Apps Craft Solid Color Version 2
 ==================================================================================*/
 
@@ -557,7 +557,7 @@ h1,h2,h3,h4,h5,h6,a,ul,li{
 	color: #EEEEEE;
 }
 
-/*=================================================================== 
+/*===================================================================
 		Apps Craft Solid Color Version 3
 ==================================================================================*/
 
@@ -662,7 +662,7 @@ h1,h2,h3,h4,h5,h6,a,ul,li{
 }
 
 
-/*=================================================================== 
+/*===================================================================
 		Apps Craft Version 10
 ==================================================================================*/
 
@@ -789,7 +789,7 @@ h1,h2,h3,h4,h5,h6,a,ul,li{
 	color: #01C9FC;
 }
 
-/*=================================================================== 
+/*===================================================================
 		Apps Craft Version 11
 ==================================================================================*/
 
@@ -922,7 +922,7 @@ h1,h2,h3,h4,h5,h6,a,ul,li{
 }
 
 
-/*=================================================================== 
+/*===================================================================
 		Apps Craft Version 12
 ==================================================================================*/
 
@@ -1054,7 +1054,7 @@ h1,h2,h3,h4,h5,h6,a,ul,li{
 	color: #FDBE39;
 }
 
-/*=================================================================== 
+/*===================================================================
 		Apps Craft Version 13
 ==================================================================================*/
 
@@ -1198,7 +1198,7 @@ h1,h2,h3,h4,h5,h6,a,ul,li{
 
 
 
-/*=================================================================== 
+/*===================================================================
 		Apps Craft Version 18
 ==================================================================================*/
 
@@ -1266,7 +1266,7 @@ body.apps-craft-v18.apps-craft--loaded .apps-craft-18-banner-bg-wrap span:nth-ch
 }
 
 @keyframes stripeSlideIn{
-	0%{ 
+	0%{
 		opacity:0;
 		-webkit-transform:translateX(150px) skew(0);
 		transform:translateX(150px) skew(0)
@@ -1279,7 +1279,7 @@ body.apps-craft-v18.apps-craft--loaded .apps-craft-18-banner-bg-wrap span:nth-ch
 }
 
 @-webkit-keyframes stripeSlideIn{
-	0%{ 
+	0%{
 		opacity:0;
 		-webkit-transform:translateX(150px) skew(0);
 	}
@@ -1290,7 +1290,7 @@ body.apps-craft-v18.apps-craft--loaded .apps-craft-18-banner-bg-wrap span:nth-ch
 }
 
 
-/*=================================================================== 
+/*===================================================================
 		Apps Craft Version 19
 =====================================================================*/
 
@@ -1318,7 +1318,7 @@ body.apps-craft-v18.apps-craft--loaded .apps-craft-18-banner-bg-wrap span:nth-ch
   overflow: hidden;
   background-color: #F4F4F4;
 }
-.apps-craft-welcome-section-v19:before, 
+.apps-craft-welcome-section-v19:before,
 .apps-craft-welcome-section-v19:after {
   content: "";
   position: absolute;
@@ -1409,8 +1409,8 @@ body.apps-craft-v18.apps-craft--loaded .apps-craft-18-banner-bg-wrap span:nth-ch
 ========================================================================== */
 
 
-/*====================================================================== 
-		2. Apps Ccraft Main Menu 
+/*======================================================================
+		2. Apps Ccraft Main Menu
 ====================================================================================*/
 #apps-craft-menu {
     display: block;
@@ -1441,7 +1441,7 @@ body.apps-craft-v18.apps-craft--loaded .apps-craft-18-banner-bg-wrap span:nth-ch
 	font-weight: 600;
 	border: 1px solid #f2504d;
 }
-.apps-craft-main-menu-area.sticky-menu .apps-craft-menu ul li a.apps-craft-btn, 
+.apps-craft-main-menu-area.sticky-menu .apps-craft-menu ul li a.apps-craft-btn,
 .apps-craft-main-menu-area.sticky-menu .apps-craft-search-bar a.apps-craft-btn i {
 	color: #ffffff;
 }
@@ -1900,8 +1900,8 @@ body.apps-craft-solid-color .la-ball-elastic-dots {
 	left: calc(100% - 55px);
 }
 
-/*=============================================================== 
-		3. Apps Craft Welcome Section 
+/*===============================================================
+		3. Apps Craft Welcome Section
 ======================================================================================*/
 
 .apps-craft-welcome-section{
@@ -2337,7 +2337,7 @@ body.apps-craft-v7 .apps-craft-position-rel .layer img {
 	bottom: -120px;
 	width: 100%;
 	left: 0;
-	background-color: #F4F4F4; 
+	background-color: #F4F4F4;
 	transform: skewY(177deg) matrix3d(2.482602, -0.004259, 0, -0.000033, -1.922069, 2.251723, 0, -0.001121, 0, 0, 1, 0, 281, 130, 0, 1);
 }
 /*Version 18*/
@@ -2600,8 +2600,8 @@ body.apps-craft-v7 .apps-craft-position-rel .layer img {
 }
 
 
-/*=========================================================================== 
-		4. Apps Craft About 
+/*===========================================================================
+		4. Apps Craft About
 ====================================================================================================*/
 
 .apps-craft-single-about {
@@ -2640,7 +2640,7 @@ body.apps-craft-v7 .apps-craft-position-rel .layer img {
 }
 
 /*===================================================================
-		5. Apps Craft Feature Section 
+		5. Apps Craft Feature Section
 ===================================================================================*/
 
 .apps-craft-feature-section{
@@ -2714,9 +2714,9 @@ body.apps-craft-v7 .apps-craft-position-rel .layer img {
 .apps-craft-feature-img figure{
 	position: relative;
 	text-align: center;
-	display: inline-block;    
+	display: inline-block;
 }
-.apps-craft-feature-img .apps-craft-feature-ico{ 
+.apps-craft-feature-img .apps-craft-feature-ico{
 	position: absolute;
 }
 .apps-craft-feature-img .icon-1x{
@@ -2810,7 +2810,7 @@ body.apps-craft-v7 .apps-craft-position-rel .layer img {
 
 
 /*======================================================
-		6. Apps Craft Video Section 
+		6. Apps Craft Video Section
 ======================================================================*/
 
 .apps-craft-video-section{
@@ -2884,12 +2884,12 @@ body.apps-craft-v6 .apps-craft-video-content a i {
 	font-size: 5.000em;
 }
 
-/*======================================================================= 
-		7. Apps Craft Fun Factory 
+/*=======================================================================
+		7. Apps Craft Fun Factory
 ==============================================================================================*/
 
 .apps-craft-fun-factory-section {
-	position: relative;    
+	position: relative;
 	background-color: #F4F4F4;
 	z-index: 4;
 	background-attachment: fixed;
@@ -2941,8 +2941,8 @@ body.apps-craft-v6 .apps-craft-video-content a i {
 
 
 
-/*======================================================================== 
-		8. Apps Craft Why Choose Us 
+/*========================================================================
+		8. Apps Craft Why Choose Us
 =======================================================================================================*/
 
 .apps-craft-why-chose-ico {
@@ -3038,8 +3038,8 @@ figure.apps-craft-why-chose-img img:last-child {
 .apps-craft-why-chose-img{
 	float: right;
 }
-/*======================================================== 
-		9. Apps Craft Screenshort Section 
+/*========================================================
+		9. Apps Craft Screenshort Section
 ==========================================================*/
 
 .apps-carft-screen-short-ssection {
@@ -3068,7 +3068,7 @@ figure.apps-craft-why-chose-img img:last-child {
 	outline: none;
 }
 
-/*======================================================== 
+/*========================================================
 		9.1 Apps Craft Showcase (V6)
 ==========================================================*/
 .showcase-wrap {
@@ -3186,7 +3186,7 @@ blockquote.team-quote p {
 
 
 /*=========================================================
-		10. Apps Craft Testimonial 
+		10. Apps Craft Testimonial
 ==========================================================================*/
 
 .apps-craft-commentor-img {
@@ -3299,7 +3299,7 @@ blockquote.team-quote p {
 	width: 170px;
 	margin: 0 auto;
 }
-#apps-craft-testimonial-thumb figure{ 
+#apps-craft-testimonial-thumb figure{
 	display: inline-block;
 	width: 38px;
 	height: 38px;
@@ -3309,7 +3309,7 @@ blockquote.team-quote p {
 	position: relative;
 }
 #apps-craft-testimonial-thumb figure img{
-	border-radius: 100%;   
+	border-radius: 100%;
 }
 #apps-craft-testimonial-thumb figure:before{
 	position: absolute;
@@ -3363,7 +3363,7 @@ blockquote.team-quote p {
 }
 
 /*============================================================
-		11. Apps Craft Pricing Table 
+		11. Apps Craft Pricing Table
 ===========================================================================================*/
 
 .apps-craft-single-pricing{
@@ -3413,8 +3413,8 @@ blockquote.team-quote p {
 }
 
 
-/*=============================================================================== 
-		12. Apps Craft Team 
+/*===============================================================================
+		12. Apps Craft Team
 ===================================================================================================*/
 
 .apps-craft-team-section{
@@ -3532,8 +3532,8 @@ blockquote.team-quote p {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=83)";
 }
 
-/*============================================================= 
-		13. Apps Craft now Available 
+/*=============================================================
+		13. Apps Craft now Available
 =======================================================================================*/
 
 .apps-craft-now-available-section {
@@ -3574,8 +3574,8 @@ blockquote.team-quote p {
 }
 
 
-/*=============================================================== 
-		14. Apps Craft Subscribe 
+/*===============================================================
+		14. Apps Craft Subscribe
 ===============================================================================================*/
 
 .apps-craft-subscribe-wraper{
@@ -3672,8 +3672,8 @@ body.apps-craft-v6 .apps-craft-subscribe-content {
 }
 
 
-/*============================================================ 
-		15. Apps Craft FAQ Section 
+/*============================================================
+		15. Apps Craft FAQ Section
 ====================================================================================*/
 
 .apps-craft-faq-section {
@@ -3705,7 +3705,7 @@ body.apps-craft-v6 .apps-craft-subscribe-content {
 	width: 100%;
 	height: 90px;
 	border-radius: 3px;
-	display: table; 
+	display: table;
 	padding: 0 30px;
 	-webkit-transition: all .4s linear;
 	transition: all .4s linear;
@@ -3830,8 +3830,8 @@ body.apps-craft-v6 .apps-craft-subscribe-content {
 }
 
 
-/*======================================================= 
-		16. Apps Craft Footer 
+/*=======================================================
+		16. Apps Craft Footer
 ===========================================================================*/
 
 .apps-craft-footer-section {
@@ -3898,12 +3898,12 @@ body.apps-craft-v6 .apps-craft-subscribe-content {
 
 
 /*===============================================================
-		17. Apps Craft Magnific Custom Css 
+		17. Apps Craft Magnific Custom Css
  =====================================================================================*/
 .mfp-fade.mfp-bg {
 	opacity: 0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	-webkit-transition: all 0.15s ease-out; 
+	-webkit-transition: all 0.15s ease-out;
 	transition: all 0.15s ease-out;
 }
 .mfp-fade.mfp-bg.mfp-ready {
@@ -3918,7 +3918,7 @@ body.apps-craft-v6 .apps-craft-subscribe-content {
 .mfp-fade.mfp-wrap .mfp-content {
 	opacity: 0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	-webkit-transition: all 0.15s ease-out; 
+	-webkit-transition: all 0.15s ease-out;
 	transition: all 0.15s ease-out;
 }
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
@@ -3936,7 +3936,7 @@ body.apps-craft-v6 .apps-craft-subscribe-content {
 /*==================================================================
   18. Contact Form
   =================================================================*/
-form#apps-craft-form{
+form#gform{
 	position: relative;
 }
 div.apps_craft_error {
@@ -3970,8 +3970,8 @@ div.apps-craft-success-message {
 }
 
 
-/*================================================================= 
-			Preloader 
+/*=================================================================
+			Preloader
 =================================================================*/
 
 
@@ -4007,7 +4007,7 @@ span.apps-craft-loader.apps-craft-loader1 {
 	border: 5px solid transparent;
 	border-top-color:#fff;
 	-webkit-animation: spin 1s linear infinite;
-		animation: spin 1s linear infinite; 
+		animation: spin 1s linear infinite;
 }
 
 
@@ -4168,8 +4168,8 @@ span.apps-craft-loader.apps-craft-loader1 {
 }
 
 
-/*=================================================================== 
-			Extra 
+/*===================================================================
+			Extra
 =========================================================*/
 .apps-craft-subscribe-form form#mc-form{
 	position: relative;

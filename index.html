@@ -6,7 +6,6 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="description" content="SML(Simples Market List)">
-		<meta name="author" content="pixiefy">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
@@ -35,6 +34,7 @@
 
 		<link rel="stylesheet" href="css/responsive.css">
 		<!-- Resposive.css Stylesheet -->
+		<script type="text/javascript">var submitted=false;</script>
 	</head>
 	<body class="apps-craft-v7">
 
@@ -600,7 +600,7 @@
 						<div class="apps-craft-single-team wow fadeIn" data-wow-delay="200ms" itemscope itemtype="http://schema.org/ImageGallery">
 							<figure class="apps-craft-team-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 								<div class="apps-craft-team-member-pic">
-									<img src="img/marcio_landing_page.png" alt="Imagem do membro da equipe do SML(Simples Market List)">
+									<img src="img/marcio_landing_page.jpg" alt="Imagem do membro da equipe do SML(Simples Market List)">
 
 									<div class="apps-craft-team-hover">
 										<div class="apps-craft-social-link">
@@ -717,7 +717,7 @@
 								<div class="panel-heading">
 									<h4 class="panel-title click">
 										<a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="">
-											Por que comprar <strong>SML</strong>?</a>
+											Por que utilizar <strong>SML</strong>?</a>
 									</h4>
 								</div>
 								<div id="collapse1" class="panel-collapse collapse in">
@@ -755,13 +755,14 @@
 						<div class="apps-craft-contact-form-content-inner">
 							<h2>Qualquer outra pergunta? <br>Você pode entrar em <span>Contato conosco.</span></h2>
 							<div class="apps-craft-contact-form">
-								<form action="#" method="POST" id="apps-craft-form">
-									<input type="email" id="apps-craft-input-email" name="email" placeholder="example@domain.com">
-									<textarea name="massage" id="apps-craft-input-message" cols="30" rows="10" placeholder="Sua Mensagem aqui..."></textarea>
+								<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScN-lkEdlqKuMlgCcKmQSRhGsVkQMBENZwRioKfR5PIra4JhQ/viewform?usp=pp_url" target="hidden_iframe" onsubmit="submitted=true;">
+									<input type="email" id="entry.2079356249" name="entry.2079356249" placeholder="example@dominio.com.br">
+									<textarea name="entry.1362765922" id="entry.1362765922" cols="30" rows="10" placeholder="Sua Mensagem aqui..."></textarea>
 
 									<div class="apps-craft-submit-btn-ar">
 										<input type="submit" name="Send Message" value="Enviar Mensagem" id="apps-craft-input-send">
 									</div>
+									<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 								</form>
 							</div> <!-- .apps-craft-contact-form END -->
 						</div> <!-- .apps-craft-contact-form-content-inner END -->
@@ -815,6 +816,7 @@
 
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<!-- jquery-3.1.1.min.js -->
+
 	<script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
 	<!--jquery.ajaxchimp.min.js  -->
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>

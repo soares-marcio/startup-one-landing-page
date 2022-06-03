@@ -30,7 +30,7 @@
 
 -------------------------------------------------------------------*/
 
-  /*=============================================== 
+  /*===============================================
       1. Auto Height Function
   ================================================*/
   function autoHeight() {
@@ -40,7 +40,7 @@
       why_choose_txt.css('height', why_choose_img.outerHeight());
   }
 
-  /*=============================================== 
+  /*===============================================
       2. Validateemail Function
   ================================================*/
   function validateEmail(email) {
@@ -50,7 +50,7 @@
 
   autoHeight();
 
-  /*=============================================== 
+  /*===============================================
       3. Animate Init
   ================================================*/
   new WOW().init();
@@ -58,7 +58,7 @@
 $(window).on('load', function() {
   autoHeight();
 
-  /*=============================================== 
+  /*===============================================
       4. Preloader
   ================================================*/
   $('#preloader').fadeOut(450);
@@ -74,7 +74,7 @@ $(window).on('load', function() {
 $(document).ready(function(){
   autoHeight();
 
-	/*=============================================== 
+	/*===============================================
 	      5. Parallax Init
 	  ================================================*/
 	if ($('#apps_craft_animation').length > 0 ) {
@@ -86,7 +86,7 @@ $(document).ready(function(){
 	  $('#apps_craft_animation-2').parallax();
 	}
 
-  /*=============================================== 
+  /*===============================================
       6. Apps Craft Top Menu Offset
   ================================================*/
   if($('.apps-craft-menu ul li a, .apps-craft-menu-item ul li a, .apps-craft-logo a').length >0 ) {
@@ -99,23 +99,23 @@ $(document).ready(function(){
  			scrollTop: target.offset().top
  		}, 500);
  	});
-  } // End is_exists 
+  } // End is_exists
 
-  /*=============================================== 
+  /*===============================================
       7. Apps Craft Footer Menu Offset
   ================================================*/
  if($('.apps-craft-footer-menu').length >0 ) {
   $( '.apps-craft-footer-menu' ).on('click', 'a', function(e){
     var href = $(this).attr("href"),
         offsetTop = href === "#" ? 0 : $(href).offset().top - 0;
-    $('html, body').stop().animate({ 
+    $('html, body').stop().animate({
         scrollTop: offsetTop,
     }, 500, "easeInOutCirc");
     e.preventDefault();
   });
   } // End is_exists
 
-  /*=============================================== 
+  /*===============================================
       8. Apps Craft Sync Slider
   ================================================*/
 
@@ -198,11 +198,11 @@ $(document).ready(function(){
       } else if(num === sync2visible[0]){
         sync2.trigger("owl.goTo", num-1)
       }
-      
+
     }
 } // Apps Craft Sync Slider
 
-/*=============================================== 
+/*===============================================
       9. Apps Craft Video pop UP
   ================================================*/
 if ($('.apps-craft-popup-video').length > 0) {
@@ -216,7 +216,7 @@ if ($('.apps-craft-popup-video').length > 0) {
   });
 } // Apps Craft Video Pop UP
 
-/*=============================================== 
+/*===============================================
       9.1 Apps Craft Log In pop UP
   ================================================*/
 if ($('.apps-craft-login').length > 0) {
@@ -229,12 +229,12 @@ if ($('.apps-craft-login').length > 0) {
   });
 } // Apps Craft Video Pop UP
 
-/*=============================================== 
+/*===============================================
      10. Apps Craft Video Background
   ================================================*/
 if ($('.apps-craft-video-bg-section').length > 0) {
-  var options = { 
-    videoId: 'waTteMeg4Ag', 
+  var options = {
+    videoId: 'waTteMeg4Ag',
     start: 3 ,
     width: $(window).width(),
     wrapperZIndex: 99,
@@ -243,7 +243,7 @@ if ($('.apps-craft-video-bg-section').length > 0) {
   $('.apps-craft-video-bg-section').tubular(options);
 }
 
-/*=============================================== 
+/*===============================================
      11. Apps Craft Welcome Slider
   ================================================*/
 if ($('#apps-craft-welcome-slider').length > 0) {
@@ -285,7 +285,7 @@ $("#apps-craft-appscreen-slide").owlCarousel({
 });
 
 
-/*=============================================== 
+/*===============================================
      12. Apps Craft Accordion
   ================================================*/
 if ($('.apps-craft-accordion .panel-title').length > 0) {
@@ -295,14 +295,14 @@ if ($('.apps-craft-accordion .panel-title').length > 0) {
   });
 }
 
-/*=============================================== 
+/*===============================================
 			13. Contact Form
 		================================================*/
 
-		if ($('#apps-craft-form').length > 0) {
+		if ($('#gform').length > 0) {
 
 	  var apps_craft_contact_btn = $('#apps-craft-input-send'),
-	      apps_craft_form = $('#apps-craft-form');
+	      apps_craft_form = $('#gform');
 
 	  apps_craft_form.on('submit', function(e){
 	    e.preventDefault();
@@ -310,9 +310,8 @@ if ($('.apps-craft-accordion .panel-title').length > 0) {
 	    $('.apps_craft_error, .apps-craft-success-message, .apps-craft-loader').remove();
 	    $('.form-group input').removeClass('apps_craft_input_error');
 
-	    var apps_craft_input_name     = $('#apps-craft-input-name'),
-	        apps_craft_input_email    = $('#apps-craft-input-email'),
-	        apps_craft_input_message  = $('#apps-craft-input-message'),
+	    var apps_craft_input_email    = $(e.target[0]),
+	        apps_craft_input_message  = $(e.target[1]),
 	        apps_craft_error          = false,
 	        self                  = $(this);
 
@@ -329,30 +328,20 @@ if ($('.apps-craft-accordion .panel-title').length > 0) {
 	      apps_craft_input_message.addClass('apps_craft_input_error');
 	      apps_craft_error = true;
 	    }
+      if (apps_craft_error) return;
 
 	    if(apps_craft_error === false){
 	      apps_craft_contact_btn.before('<span class="apps-craft-loader apps-craft-loader1"></span>').hide().fadeIn();
-	      $.ajax({
-	        type: "POST",
-	        url: "php/contact-form.php",
-	        data: {
-	          'apps_craft_input_name' : apps_craft_input_name.val(),
-	          'apps_craft_input_email' : apps_craft_input_email.val(),
-	          'apps_craft_input_message' : apps_craft_input_message.val()
-	        },
-	        success: function(result){
-	           apps_craft_contact_btn.after('<div class="apps-craft-success-message">' + result + '</div>').hide().fadeIn();
+        apps_craft_contact_btn.after('<div class="apps-craft-success-message">Seu envio foi processado...</div>').hide().fadeIn();
 
-	           $(".apps-craft-loader").fadeOut("normal", function() {
-	              $(this).remove();
-	          });
-	        }
-	      });
+        $(".apps-craft-loader").fadeOut("normal", function() {
+           $(this).remove();
+       });
 	    }
 	  });
   }
 
-  /*=============================================== 
+  /*===============================================
        14. Newsletter Subscription
   ================================================*/
   if ($('.mc-form').length > 0) {
@@ -368,7 +357,7 @@ if ($('.apps-craft-accordion .panel-title').length > 0) {
  }
 
 
-/*=============================================== 
+/*===============================================
       15. Skrollr Init
   ================================================*/
 var mySkrollr = skrollr.init({
@@ -409,7 +398,7 @@ if ($('body.apps-craft-v8 #apps-craft-home').length > 0 ) {
   }, 3000);
 }
 
-/*=============================================== 
+/*===============================================
       16. sidebar menu
   ================================================*/
 
@@ -428,7 +417,7 @@ $('.apps-craft-menu-item ul li a, .apps-craft-logo a').on('click', function(even
 	}
 });
 
-/*=============================================== 
+/*===============================================
       17. particle active
   ================================================*/
 
@@ -543,7 +532,7 @@ if ($('body').hasClass('apps-craft-particle')) {
     },
     "retina_detect": true
   });
-  
+
 
 }
 
@@ -557,7 +546,7 @@ if ($('body').hasClass('apps-craft-particle')) {
       next();
     });
   }
-  
+
   $('.ball').click(function() {
     $(this).toggleClass('active');
   });
@@ -576,7 +565,7 @@ if ($('body').hasClass('apps-craft-particle')) {
       next();
     });
   });
-  
+
  setTimeout(showpanel, 1800);
 
 
@@ -585,13 +574,13 @@ if ($('body').hasClass('apps-craft-particle')) {
 }); // End Document Ready
 
 
-/*=============================================== 
+/*===============================================
       18. Sticky Menu
   ================================================*/
 
 $(window).scroll(function(){
   if ($(window).scrollTop() > 50) {
-     $('.apps-craft-main-menu-area').addClass('sticky-menu'); 
+     $('.apps-craft-main-menu-area').addClass('sticky-menu');
   } else {
       $('.apps-craft-main-menu-area').removeClass('sticky-menu');
   }
@@ -603,7 +592,7 @@ $(window).on('resize', function(){
 }); // End Resize
 
 
-/*=============================================== 
+/*===============================================
       18. 3D Slider
   ================================================*/
 
@@ -680,7 +669,7 @@ var transformProp = Modernizr.prefixed('transform');
       // populate on startup
       carousel.panelCount = 12;
       carousel.modify();
-    
+
       for (var i=0; i < 2; i++) {
         navButtons[i].addEventListener( 'click', onNavButtonClick, false);
       }
