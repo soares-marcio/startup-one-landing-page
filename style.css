@@ -1500,7 +1500,7 @@ body.apps-craft-v18.apps-craft--loaded .apps-craft-18-banner-bg-wrap span:nth-ch
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .apps-craft-main-menu-area.sticky-menu .apps-craft-logo a {
-	background-image: url(img/sticky-logo.png) !important;
+	background-image: url(img/logo-img-00.png) !important;
 	background-size: contain;
 	padding: 3px 0px;
 	width: 100%;
@@ -1996,6 +1996,11 @@ body.apps-craft-video-banner .apps-craft-welcome-container {
 	font-weight: 300;
 	margin-bottom: 70px;
 }
+
+.apps-craft-welcome-content p{
+	color: #FFFFFF;
+}
+
 .apps-craft-welcome-content h1 span{
 	font-weight: 400;
 	font-size: inherit;
